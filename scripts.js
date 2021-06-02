@@ -5,5 +5,3 @@ Date.prototype.getWeekNumber = function(){
     var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
     return Math.ceil((((d - yearStart) / 86400000) + 1)/7)
   };
-  
-  document.write(new Date().getWeekNumber());

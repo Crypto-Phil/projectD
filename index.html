@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
-<body class=h1>
+<body class="h1">
     <h1>Disciplina ToDo</h1>
     <div>
-        <p>Add your goals for CW </p>
+        <p id="demo">Add your goals for CW </p>
     </div>
 
-    <div>
+    <div class="weekNumber">
         <script>document.write(new Date().getWeekNumber());</script>
     </div>
 
     <div> 
         <p>/52</p> 
     </div>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Ready to go"'>Save</button>
 
 <script src="scripts.js"></script>
 </body>
